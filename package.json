@@ -1,11 +1,11 @@
 {
-  "name": "@thirdstrandstudio/mcp-figma",
-  "version": "0.7.0",
-  "description": "MCP server for figma",
+  "name": "@enhanced/mcp-figma",
+  "version": "1.0.0",
+  "description": "Enhanced Figma MCP Server with AI-powered design capabilities, full CRUD operations, and intelligent automation",
   "license": "MIT",
-  "author": "Third Strand Studio LLC (https://github.com/thirdstrandstudio)",
-  "homepage": "https://github.com/thirdstrandstudio/mcp-figma",
-  "bugs": "https://github.com/thirdstrandstudio/mcp-figma/issues",
+  "author": "Enhanced MCP Team",
+  "homepage": "https://github.com/coladapo/mcp-figma",
+  "bugs": "https://github.com/coladapo/mcp-figma/issues",
   "type": "module",
   "bin": {
     "mcp-figma": "dist/index.js"
@@ -19,21 +19,31 @@
     "watch": "tsc --watch",
     "generate-api": "npx swagger-typescript-api -p openapi.yaml -o ./src/api/ --axios",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.7.0",
     "axios": "^1.8.4",
     "axios-retry": "^4.5.0",
     "zod": "^3.24.2",
-    "zod-to-json-schema": "^3.24.4"
+    "zod-to-json-schema": "^3.24.4",
+    "openai": "^4.0.0",
+    "p-queue": "^7.4.1",
+    "lru-cache": "^10.0.0",
+    "ws": "^8.16.0",
+    "dotenv": "^16.3.1",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
+    "@types/ws": "^8.5.10",
     "jest": "^29.7.0",
     "rimraf": "^6.0.1",
     "shx": "^0.3.4",
     "ts-jest": "^29.1.2",
+    "tsx": "^4.7.1",
     "typescript": "^5.6.2"
   }
 }
