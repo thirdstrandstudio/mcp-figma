@@ -9,6 +9,9 @@ MCP Server for interacting with the Figma API. This server provides a complete s
 
 ![image](https://github.com/user-attachments/assets/aab5d665-4373-4e05-b328-f5202019d015)
 
+<a href="https://glama.ai/mcp/servers/@thirdstrandstudio/mcp-figma">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@thirdstrandstudio/mcp-figma/badge" alt="mcp-figma MCP server" />
+</a>
 
 ## Tools
 
